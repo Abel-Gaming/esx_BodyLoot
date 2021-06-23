@@ -17,7 +17,7 @@ Citizen.CreateThread(function()
 		while #(GetEntityCoords(PlayerPedId()) - GetEntityCoords(closestPed)) <= 1.5 do
 			Citizen.Wait(0)
 			if IsEntityDead(closestPed) then
-				ESX.Game.Utils.DrawText3D(closestPedCoords, "Press [~b~E~w~] to loot body", 0.6, 1)
+				ESX.Game.Utils.DrawText3D(GetEntityCoords(closestPed), "Press [~b~E~w~] to loot body", 0.6, 1)
 				if IsControlJustReleased(0, 51) then
 					RequestAnimDict("random@domestic")
 					while not HasAnimDictLoaded("random@domestic") do

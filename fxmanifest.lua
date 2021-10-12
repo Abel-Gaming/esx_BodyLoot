@@ -1,4 +1,4 @@
-fx_version 'bodacious'
+fx_version 'cerulean'
 game 'gta5'
 description 'ESX Body Loot - Loot dead NPC bodies'
 author 'Abel Gaming'
